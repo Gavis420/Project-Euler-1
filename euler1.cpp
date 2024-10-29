@@ -7,13 +7,11 @@
 #include <iostream>
 using namespace std;
 
-int main()
+void functionA(int &total)  // Pass total by reference
 {
-    int total = 0;
-
     for(int i = 5; i < 1000; i += 5)
     {
-        if(i%3 != 0)
+        if(i % 3 != 0)
         {
             total += i;
         }
@@ -23,8 +21,15 @@ int main()
     {
         total += i;
     }
+}
 
-    cout << "\n The sum of multiples of 3 or 5 up to 1000 is " << total << ".\n\n";
+int main()
+{
+    int total = 0;
+
+    functionA(total);
+
+    cout << "\nThe sum of multiples of 3 or 5 up to 1000 is " << total << ".\n\n";
     
     return 0;
 }
