@@ -39,7 +39,7 @@ int main()
 {
     int total = 0;
 
-    functionB(total);
+    functionA(total);
 
     cout << "\nThe sum of multiples of 3 or 5 up to 1000 is " << total << ".\n\n";
     
