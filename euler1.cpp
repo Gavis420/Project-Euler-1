@@ -11,7 +11,7 @@ int main()
 {
     int total = 0;
 
-    for(int i = 5; i <= 1000; i += 5)
+    for(int i = 5; i < 1000; i += 5)
     {
         if(i%3 != 0)
         {
@@ -19,10 +19,12 @@ int main()
         }
     }
     
-    for(int i = 5; i <= 1000; i += 5)
+    for(int i = 3; i < 1000; i += 3)
     {
         total += i;
     }
 
+    cout << total;
+    
     return 0;
 }
