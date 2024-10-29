@@ -24,7 +24,7 @@ int main()
         total += i;
     }
 
-    cout << total;
+    cout << "\n The sum of multiples of 3 or 5 up to 1000 is " << total << ".\n\n";
     
     return 0;
 }
