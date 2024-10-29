@@ -4,20 +4,25 @@
 * Find the sum of all the multiples of 3 or 5 below 1000.
 */
 
-//ideas for solution:
-// use loop for multiplication method. meaning:
-// multiply 3 x i until it is >= 1000 and do the same with 5 x i until >= 1000. 
-    // as you go continually add the number to a growing total
-// using the looping method, each time you get a new product of 5, check if it is divisible by 3 also
-// if it is, don't include it, as it will be accounted for in the loop for the 3
-
 #include <iostream>
 using namespace std;
 
 int main()
 {
-    // Prints hello world
-    cout << "Hello World";
+    int total = 0;
+
+    for(int i = 5; i <= 1000; i += 5)
+    {
+        if(i%3 != 0)
+        {
+            total += i;
+        }
+    }
+    
+    for(int i = 5; i <= 1000; i += 5)
+    {
+        total += i;
+    }
 
     return 0;
 }
