@@ -8,6 +8,11 @@
 #include <iostream>
 using namespace std;
 
+int sumn(int n, int d) {
+    n /= d;
+    return d * n * (n + 1) / 2;
+}
+
 void functionA(int &a)  // Pass total by reference
 {
     for(int i = 5; i < 1000; i += 5)
