@@ -1,8 +1,12 @@
-euler1: euler1.cpp
-	g++ -std=c++2a -o euler1 euler1.cpp
+# Problem 1
+problem001: problem001/euler1
 
-run: euler1
-	./euler1
+problem001/euler1: problem001/euler1.cpp
+	g++ -std=c++2a -o problem001/euler1 problem001/euler1.cpp
 
+run_problem001: problem001
+	./problem001/euler1
+
+# Clean up all compiled files
 clean:
-	rm -f euler1
+	rm -f problem001/euler1
