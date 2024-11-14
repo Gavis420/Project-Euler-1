@@ -56,7 +56,7 @@ int main() {
     long long int bound = 0;
     long long int total = 0;
 
-    std::cout << "Enter an upper bound? " << std::endl;
+    std::cout << "Enter an upper bound? \n";
     std::cin >> bound;
 
     // using functionC as it should scale the best with larger bounds
