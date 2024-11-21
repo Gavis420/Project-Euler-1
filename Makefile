@@ -1,6 +1,6 @@
 # Clean up all compiled files
 clean:
-	rm -f problem001/main problem002/main problem003/main problem004/main
+	rm -f problem001/main problem002/main problem003/main problem004/main problem005/main
 
 # Problem 1
 problem001: problem001/main
@@ -37,3 +37,12 @@ problem004/main: problem004/main.cpp
 
 run_problem004: problem004
 	./problem004/main
+
+# Problem 5
+problem005: problem005/main
+
+problem005/main: problem005/main.cpp
+	g++ -std=c++2a -o problem005/main problem005/main.cpp
+
+run_problem005: problem005
+	./problem005/main
